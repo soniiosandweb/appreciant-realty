@@ -89,7 +89,7 @@ const Header = () => {
         !priceFormAutoOpened
       ) {
         openPriceForm(
-          "Ananta Aspire Exclusive Price List!",
+          "Appreciant Realty Exclusive Price List!",
           "Complete Overview of Current Prices for All Units to Guide Your Property Investment",
           "Download Price List",
           "sideFixed",
@@ -173,7 +173,7 @@ const Header = () => {
             </Navbar.Toggle>
 
             <Navbar.Brand href="/">
-              <img src={logo} alt="Ananta Aspire Logo" className="logo_header" />
+              <img src={logo} alt="Appreciant Realty Logo" className="logo_header" />
             </Navbar.Brand>
 
             <div className="header_right">
@@ -227,9 +227,9 @@ const Header = () => {
 
                 <Button className="header_request_btn" onClick={() => openPriceForm("Request Exclusive Access to Project Details", "Our Team Will Share Accurate Details on Pricing, Plans & Possession", "Send Request", "request")}>Enquire Now</Button>
               </div>
-              <Link to={"tel:+910000000000"} className="header_call blink">
+              <Link to={"tel:+919915841204"} className="header_call blink">
                 <img src={phoneIcon} alt="Phone" className="phone_icon" />
-                +91 0000000000
+                +91 9915841204
               </Link>
             </div>
 
@@ -239,19 +239,19 @@ const Header = () => {
 
         
       {/* Download Brochure Button */}
-      <div className='sticky h-0 z-20' style={{ top: "50%" }}>
-        <button tabIndex='-1' className="w-max absolute -rotate-90 download-broucher-btn" style={{ left: "-100px" }} onClick={() => openPriceForm("Schedule Your Exclusive Free Site Visit", "Experience Premium Living Firsthand at Ananta Aspire", "Schedule Visit", "schedule")}>Schedule a Free Site Visit</button>
-      </div>
+      {/* <div className='sticky h-0 z-20' style={{ top: "50%" }}>
+        <button tabIndex='-1' className="w-max absolute -rotate-90 download-broucher-btn" style={{ left: "-100px" }} onClick={() => openPriceForm("Schedule Your Exclusive Free Site Visit", "Experience Premium Living Firsthand at Appreciant Realty", "Schedule Visit", "schedule")}>Schedule a Free Site Visit</button>
+      </div> */}
 
       <div className='sticky h-0 z-20' style={{ top: "90%" }}>
-        <a href="https://wa.me/+910000000000" rel="noreferrer" target="_blank" className="whatsapp_link_text w-max absolute" style={{ right: "25px" }}>
+        <a href="https://wa.me/+919915841204" rel="noreferrer" target="_blank" className="whatsapp_link_text w-max absolute" style={{ right: "25px" }}>
           <img src={whatsappIcon} alt="Whatsapp" className="header_btns_float whatsapp" />
         </a>
       </div>
 
       {/* <div className="fixed_btns_header z-20">
         <img src={downloadIcon} alt="Download" className="header_btns_float download" onClick={handleOpen} />
-        <a href="https://wa.me/+910000000000" rel="noreferrer" target="_blank">
+        <a href="https://wa.me/+919915841204" rel="noreferrer" target="_blank">
           <img src={whatsappIcon} alt="Whatsapp" className="header_btns_float whatsapp" />
         </a>
       </div> */}

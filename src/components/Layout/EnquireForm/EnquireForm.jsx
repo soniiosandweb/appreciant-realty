@@ -109,7 +109,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
 
             axios({
                 method: "post",
-                url: "https://anantaaspire.co/api/enquire-us-api.php",
+                url: "https://appreciantrealty.com/api/enquire-us-api.php",
                 data: JSON.stringify({
                     name: formData.name,
                     mobileNumber: formData.mobileNumber,
@@ -139,7 +139,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                             <>
                                 <span className='thanku-txt'>Thank You!</span>
                                 <div className='flex flex-col success_msg'>
-                                    <span>Our team will connect soon to help you explore Ananta Aspire — where luxury meets comfort.</span>
+                                    <span>Our team will connect soon to help you explore Appreciant Realty — where luxury meets comfort.</span>
                                 </div>
                             </>
                         );
@@ -314,7 +314,7 @@ const EnquireForm = ({ title, setOpen, button, formId, showSide }) => {
                                     /> 
                                     <span className={errors.terms ? "checkbox-error checkmark" : "checkmark"}></span>
                                 </label>
-                                <span>I agree to be contacted by 'Ananta Aspire' and agents via WhatsApp, SMS, phone, email etc.</span>
+                                <span>I agree to be contacted by 'Appreciant Realty' and agents via WhatsApp, SMS, phone, email etc.</span>
 
                                 
                             </p>

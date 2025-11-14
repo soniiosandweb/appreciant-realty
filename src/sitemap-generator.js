@@ -9,7 +9,7 @@ const Sitemap = require("react-router-sitemap").default;
 
 async function generateSitemap() {
     return new Sitemap(router)
-      .build("https://anantaaspire.co")
+      .build("https://appreciantrealty.com")
       .save("./public/sitemap.xml");
   
 }

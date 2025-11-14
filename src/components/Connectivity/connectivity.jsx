@@ -8,8 +8,8 @@ const ConnectivityPage = () => {
     return(
         <>
             <MetaData 
-                title={"Strategic Location & Connectivity - Ananta Aspire"}
-                description={"Benefit from Ananta Aspire's strategic location, offering excellent connectivity to the city’s top landmarks, commercial zones, and recreational facilities. A perfect address for balanced living."}
+                title={"Strategic Location & Connectivity - Appreciant Realty"}
+                description={"Benefit from Appreciant Realty's strategic location, offering excellent connectivity to the city’s top landmarks, commercial zones, and recreational facilities. A perfect address for balanced living."}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <div className="pt-2">

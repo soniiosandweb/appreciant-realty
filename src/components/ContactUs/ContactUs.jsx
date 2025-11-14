@@ -9,8 +9,8 @@ const ContactUsPage = () => {
     return(
         <>
             <MetaData 
-                title={"Connect with Us - Ananta Aspire"}
-                description={" Connect with Ananta Aspire to learn more about our luxurious living options. Our representatives are available to provide assistance and detailed project insights. "}
+                title={"Connect with Us - Appreciant Realty"}
+                description={" Connect with Appreciant Realty to learn more about our luxurious living options. Our representatives are available to provide assistance and detailed project insights. "}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <ContactUs />

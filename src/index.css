@@ -18,10 +18,26 @@
   font-family: "Montserrat-SemiBold";
   src: url('./assests/font/Montserrat-SemiBold.ttf');
 }
-
 @font-face {
   font-family: "Montserrat-Black";
   src: url('./assests/font/Montserrat-Black.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url('./assests/font/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url('./assests/font/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url('./assests/font/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url('./assests/font/Poppins-SemiBold.ttf');
 }
 
 @font-face {
@@ -41,6 +57,7 @@ body {
   overflow-x: hidden;
   /* padding-right: 0 !important;
   overflow-y: auto !important; */
+  background-color: var(--color-black);
 }
 .yarl__no_scroll {
   overflow: hidden !important;
@@ -141,9 +158,9 @@ h1, h2, h3, h4, h5, h6 {
   --color-gray: #555050;
   --color-brown: #421F12;
   --color-old-brown: #8f6445;
-  --color-border: #B7B7B7;
+  --color-border: #FFFFFFE0;
   --color-transparent: transparent;
-  --color-header-bg: #243043B0;
+  --color-header-bg: #0000006B;
   --font-semibold: "Montserrat-SemiBold";
   --font-bold: "Montserrat-Bold";
   --font-black: "Montserrat-Black";
@@ -151,10 +168,15 @@ h1, h2, h3, h4, h5, h6 {
   --font-regular: "Montserrat";
   --bs-border-width: 0;
   --bs-border-radius-lg: 8px;
-  --color-yellow: #FF8C27;
+  --color-yellow: #FFCB6D;
   --color-mainheading: #282828;
   --color-footer: #1E293B;
   --color-newblue: #1C2647;
+
+  --font-poppins-semibold: "Poppins-SemiBold";
+  --font-poppins-bold: "Poppins-Bold";
+  --font-poppins-medium: "Poppins-Medium";
+  --font-poppins-regular: "Poppins";
 }
 
 .padding-top {

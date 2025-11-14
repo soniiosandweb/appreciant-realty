@@ -27,7 +27,7 @@
     padding: 8px 40px;
     position: relative;
     z-index: 11;
-    background-color: var(--color-footer);
+    background-color: var(--color-black);
 }
 .main_header.home_header.scroll .navbar {
     background-color: var(--color-header-bg);
@@ -37,7 +37,7 @@
     margin: 0;
 }
 .main_header .navbar-brand .logo_header {
-    height: 57px;
+    height: 72px;
     object-fit: contain;
 }
 .header_offcanvas .offcanvas-body {
@@ -71,8 +71,6 @@
 }
 .header_offcanvas .navbar-nav .nav-link {
     font-size: 15px;
-    font-family: var(--font-medium);
-    font-weight: 500;
     color: var(--color-white);
     padding: 5px 8px;
     cursor: pointer;
@@ -95,10 +93,10 @@
     font-size: 15px;
     font-weight: 500;
     font-family: var(--font-medium);
-    color: var(--color-black);
-    background-color: var(--color-yellow);
-    border: 1px solid var(--color-yellow);
-    border-radius: 25px;
+    color: var(--color-white);
+    background-color: var(--color-transparent);
+    border: 1px solid var(--color-white);
+    border-radius: 8px;
     padding: 3px 9px;
 }
 .main_header .header_right .header_request_btn:hover {
@@ -137,44 +135,23 @@
     .main_header .navbar {
         padding: 8px 20px;
     }
-    .header_offcanvas .navbar-nav .nav-link {
-        font-size: 14px;
-    }
-    .main_header .header_right .header_request_btn,
-    .header_rera_number {
-        font-size: 14px;
-    }
 }
 @media (max-width: 1199px) {
     .main_header .navbar {
         padding: 8px 15px;
     }
-    .main_header .header_right .header_request_btn,
-    .header_rera_number {
-        font-size: 12px;
-    }
-    .header_right .header_call {
-        font-size: 14px;
-        gap: 5px;
-    }
-    .header_right .header_call img {
-        width: 18px;
-        height: 18px;
-    }
-    .header_offcanvas .navbar-nav .nav-link {
-        font-size: 13px;
-        padding: 8px 3px;
-    }
     .main_header .header_right .header_right_top {
         gap: 8px;
     }
     .main_header .navbar-brand .logo_header {
-        height: 42px;
+        height: 60px;
     }
 }
 @media (max-width: 991px) {
     .main_header .header_right {
         margin-left: auto;
+        flex-direction: row-reverse;
+        gap: 10px;
     }
     .header_offcanvas .navbar-nav .nav-link {
         font-size: 15px;
@@ -198,11 +175,14 @@
         padding: 8px 0px;
     }
     .main_header .navbar-brand .logo_header {
-        height: 35px;
+        height: 55px;
     }
     .header_right .header_call {
         gap: 3px;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .main_header .header_right .header_request_btn {
+        font-size: 14px;
     }
     .header_right .header_call img {
         width: 15px;
@@ -212,20 +192,20 @@
         padding-right: 3px;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
     .main_header .navbar-brand .logo_header {
-        height: 32px;
+        height: 45px;
     }
     .main_header .header_right .header_request_btn {
         padding: 2px 3px;
     }
     .header_right .header_call {
-        font-size: 12px;
+        font-size: 13px;
         gap: 2px;
     }
     .header_right .header_call img {
-        width: 12px;
-        height: 12px;
+        width: 13px;
+        height: 13px;
     }
     .main_header .navbar-toggler .menu_icon {
         width: 28px;
@@ -233,7 +213,7 @@
     }
     .main_header .header_right .header_request_btn, 
     .header_rera_number {
-        font-size: 10px;
+        font-size: 12px;
     }
     .main_header .navbar-toggler {
         padding-right: 5px;
@@ -248,12 +228,9 @@
         gap: 5px;
     }
 }
-@media (max-width: 352px) {
+@media (max-width: 370px) {
     .main_header .navbar-brand .logo_header {
-        height: 30px;
-    }
-    .header_right .header_call {
-        font-size: 11px;
+        height: 50px;
     }
     .main_header .navbar-toggler {
         padding-right: 3px;
@@ -266,12 +243,11 @@
         width: 24px;
         height: 24px;
     }
-    .main_header .header_right .header_request_btn, 
-    .header_rera_number {
-        font-size: 9px;
-    }
     .main_header .header_right .header_right_top {
         gap: 5px;
+    }
+    .main_header .header_right {
+        flex-direction: column;
     }
 }
 /* Fixed Buttons */
@@ -802,7 +778,7 @@
     width: 100%;
 }
 .success-wrapper .success_msg {
-    color: var(--color-black);
+    color: var(--color-white);
     margin-bottom: 1rem;
     line-height: 1.2;
     text-align: center;
@@ -826,7 +802,7 @@
     padding: 1.5vw;
 }
 .price_list_heading_block .form_logo {
-    width: 8vw;
+    width: 6vw;
 }
 .price_list_form_col {
     width: 100%;
@@ -835,7 +811,7 @@
     font-size: 1.3vw;
     font-weight: 600;
     font-family: var(--font-semibold);
-    color: var(--color-footer);
+    color: var(--color-yellow);
     line-height: 1.2;
 }
 .price_list_subtext {
@@ -910,6 +886,7 @@
     font-size: 10px;
     font-weight: 500;
     font-family: var(--font-medium);
+    color: var(--color-white);
 }
 .price_list_popup_dialog .form-section {
     display: flex;

@@ -1,0 +1,108 @@
+.prime_location_top {
+    padding: 2rem 0;
+    background-color: var(--color-yellow);
+}
+.prime_location_top .main_heading {
+    color: var(--color-black);
+    margin-left: auto;
+    text-align: right;
+    font-size: 35px;
+}
+.prime_locations_grids {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6rem;
+}
+.prime_locations_grids_item {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.flex_heading_block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.prime_locations_grids_item:nth-child(2n) .flex_heading_block {
+    flex-direction: row-reverse;
+}
+.title_line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--color-yellow);
+}
+.prime_locations_grids_item .paragraph {
+    font-size: 18px;
+    color: var(--color-white);
+    line-height: 1.2;
+}
+.prime_location_flex {
+    display: flex;
+    gap: 2rem;
+}
+.prime_locations_grids_item:nth-child(2n) .prime_location_flex {
+    flex-direction: row-reverse;
+}
+.prime_location_overview {
+    flex: 0 0 290px;
+}
+.prime_location_gallery {
+    flex: 1;
+}
+.prime_location_overview .heading {
+    color: var(--color-yellow);
+    margin-bottom: 1.5rem;
+}
+.project_overview_lists {
+    list-style: inherit;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.prime_location_btn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: var(--color-transparent);
+    color: var(--color-yellow);
+    padding: 5px 20px;
+    border: 1px solid var(--color-yellow);
+    margin-top: auto;
+}
+.prime_location_btn:hover,
+.prime_location_btn:active {
+    background-color: var(--color-yellow) !important;
+    color: var(--color-black) !important;
+    border: 1px solid var(--color-yellow) !important;
+}
+
+@media (max-width: 1199px){
+    .prime_location_top .main_heading {
+        font-size: 30px;
+    }
+    .prime_location_flex,
+    .prime_locations_grids_item:nth-child(2n) .prime_location_flex {
+        flex-direction: column;
+    }
+    .prime_location_overview {
+        flex: 1;
+    }
+    .prime_locations_grids_item {
+        gap: 2rem;
+    }
+}
+@media (max-width: 767px){
+    .prime_location_top .main_heading {
+        font-size: 25px;
+    }
+    .prime_locations_grids_item .paragraph {
+        font-size: 16px;
+    }
+    .gallery_prime_location {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}

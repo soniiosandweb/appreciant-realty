@@ -1,32 +1,41 @@
 .contact_us_section {
     position: relative;
-    background-color: var(--color-footer);
-    border-radius: 25px 25px 0 0;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    background-color: var(--color-black);
 }
 .contact_us_section .contact_bg_image {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    border-top-left-radius: 25px;
     object-fit: cover;
+    opacity: 14%;
 }
 .contact_us_section .contact_us_flex {
-    display: flex;
+    display: block;
+    position: relative;
+    background-color: #A3834A;
+    border-radius: 8px;
 }
-.contact_us_left_col {
-    flex: 1;
-    width: 50%;
+.contact_us_section .contact_us_flex::before {
+    content: "";
+    background-color: var(--color-yellow);
+    width: 132px;
+    height: 132px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 224px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .contact_us_right_col {
-    width: 50%;
-    flex: 1;
+    width: 100%;
+    position: relative;
+    padding: 4rem 2rem;
 }
 .contact_section_form {
-    padding: 0 0 0 2rem ;
+    max-width: 775px;
+    margin: auto;
 }
 .contact_section_form .main_heading {
     color: var(--color-white);
@@ -37,13 +46,13 @@
 .contact_section_form .main_heading::after {
     background-color: var(--color-white);
 }
-.contact_section_form  .contact_text {
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 500;
-    font-family: var(--font-medium);
-    color: var(--color-white);
-    margin: 1rem 0 2rem;
+.contact_section_form .contact_text {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 600;
+    font-family: var(--font-semibold);
+    color: var(--color-black);
+    margin: 0 0 2rem;
 }
 .contact_section_form h5 {
     font-size: 35px;
@@ -60,8 +69,8 @@
     padding: 12px 12px !important;
     height: auto;
     border: none !important;
-    border-bottom: 1px solid var(--color-border) !important;
-    border-radius: 0px;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 3px;
     background-color: var(--color-transparent) !important;
     color: var(--color-white);
 }
@@ -70,8 +79,8 @@
 }
 .contact_section_form .PhoneInput {
     border: none !important;
-    border-bottom: 1px solid var(--color-border) !important;
-    border-radius: 0px;
+    border: 1px solid var(--color-border) !important;
+    border-radius: 3px;
     background-color: var(--color-transparent) !important;
     padding: 12px 12px !important;
 }
@@ -82,7 +91,7 @@
 }
 .contact_section_form .checkbox_div {
     margin-top: 2rem !important;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-white);
 }
 .contact_section_form input.checkbox {
@@ -94,24 +103,24 @@
     height: 18px;
 }
 .contact_section_form .submit_btn {
-    background-color: var(--color-yellow) !important;
-    color: var(--color-black);
-    border-radius: 50px;
-    text-transform: capitalize;
+    background-color: var(--color-black) !important;
+    color: var(--color-white);
+    border-radius: 8px;
+    text-transform: uppercase;
     padding: 10px 20px !important;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: var(--font-medium);
-    border: 1px solid var(--color-yellow) !important;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--font-semibold);
+    border: 1px solid var(--color-black) !important;
     margin-top: 2rem;
 }
 .contact_section_form .text-center.flex.items-center.justify-end {
     justify-content: start !important;
 }
 .contact_section_form .submit_btn:hover {
-    background-color: var(--color-btn-bg) !important;
+    background-color: var(--color-yellow) !important;
     color: var(--color-black) !important;
-    border-color: var(--color-black) !important;
+    border-color: var(--color-yellow) !important;
 }
 .contact_section_form .enquire-form .form_label {
     color: var(--color-white);
@@ -130,7 +139,7 @@
 .contact_section_form .price_range_group .btn:active,
 .contact_section_form .price_range_group .btn:hover {
     background-color: var(--color-yellow);
-    color: var(--color-white);
+    color: var(--color-black);
     border-color: var(--color-yellow) !important;
 }
 .contact_section_form .custom-checkbox .checkmark {
@@ -149,6 +158,9 @@
 .contact_us_section .success-wrapper .success_msg {
     color: var(--color-white);
     text-align: center;
+}
+.contact_us_section .enquire-form .error {
+    font-size: 14px;
 }
 .success-wrapper .thanku-txt {
     font-size: 35px;
@@ -170,9 +182,6 @@
     .contact_us_section .contact_us_flex {
         gap: 2rem;
     }
-    .contact_section_form {
-        padding: 0 1rem;
-    }
     .contact_section_form .price_range_group .btn {
         font-size: 14px;
         padding: 12px 6px;
@@ -183,10 +192,6 @@
         gap: 1rem;
         flex-direction: column;
     }
-    .contact_us_left_col {
-        flex: 1;
-        max-width: 100%;
-    }
     .contact_us_content {
         min-height: 650px;
     }
@@ -196,17 +201,6 @@
     }
     .contact_us_content .contact_us_content_text .contact_form_text {
         font-size: 16px;
-    }
-    .contact_section_form {
-        padding: 2rem 0 0;
-    }
-    .contact_us_section {
-        padding-top: 500px;
-    }
-    .contact_us_section .contact_bg_image {
-        width: 100%;
-        height: 500px;
-        border-radius: 25px 25px 0 0;
     }
     .contact_us_right_col {
         width: 100%;
@@ -219,11 +213,8 @@
     .contact_section_form .main_heading {
         font-size: 25px;
     }
-    .contact_section_form  .contact_text  {
-        font-size: 16px;
-    }
     .contact_us_section .enquire-form {
-        min-height: 420px;
+        min-height: 440px;
     }
     .contact_us_section .contact_us_flex {
         gap: 2rem;
@@ -232,8 +223,9 @@
     .contact_us_content .contact_us_content_text {
         padding: 2rem;
     }
-    .contact_section_form h5 {
+    .contact_section_form  .contact_text {
         font-size: 20px;
+        line-height: 24px;
     }
     .contact_section_form .enquire-form .form_label {
         font-size: 18px;
@@ -250,6 +242,7 @@
         font-size: 14px;
         padding: 10px 10px;
     }
+    
 }
 @media (max-width: 480px) {
     .contact_us_content .contact_us_content_text .contact_form_text {
@@ -259,14 +252,8 @@
         font-size: 12px;
         padding: 8px;
     }
-    .contact_section_form .submit_btn {
-        font-size: 16px;
-    }
-    .contact_us_section .contact_bg_image {
-        height: 300px;
-    }
-    .contact_us_section {
-        padding-top: 300px;
+    .contact_us_right_col {
+        padding: 2rem 15px;
     }
 }
 @media (max-width: 380px) {

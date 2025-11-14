@@ -10,8 +10,8 @@ const PriceListPage = () => {
         <>
 
             <MetaData 
-                title={"Tailored Price List for Premium Living - Ananta Aspire"}
-                description={"Discover tailored floor plans at Ananta Aspire, offering the perfect blend of aesthetics and functionality. Find the layout that best fits your vision of a dream home."}
+                title={"Tailored Price List for Premium Living - Appreciant Realty"}
+                description={"Discover tailored floor plans at Appreciant Realty, offering the perfect blend of aesthetics and functionality. Find the layout that best fits your vision of a dream home."}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <div className="padding-top padding-bottom">

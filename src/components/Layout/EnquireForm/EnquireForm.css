@@ -58,14 +58,14 @@ span.thanku-txt {
     font-family: var(--font-medium);
     padding: 10px 15px !important;
     height: auto;
-    border: 1px solid #A3A1A1 !important;
-    border-radius: 8px;
+    border: 1px solid var(--color-yellow) !important;
+    border-radius: 3px;
     background-color: var(--color-transparent) !important;
-    color: var(--color-black);
+    color: var(--color-white);
     width: 100%;
 }
 .enquire-form input::placeholder {
-    color: #686868;
+    color: var(--color-white);
 }
 .enquire-form input.invalid,
 .enquire-form .PhoneInput.phone-input-error,
@@ -73,8 +73,8 @@ span.thanku-txt {
     border-color: var(--color-red) !important;
 }
 .enquire-form .PhoneInput {
-    border: 1px solid #A3A1A1 !important;
-    border-radius: 8px;
+    border: 1px solid var(--color-yellow) !important;
+    border-radius: 3px;
     background-color: var(--color-transparent) !important;
     padding: 10px 15px !important;
 }
@@ -87,7 +87,7 @@ span.thanku-txt {
 .enquire-form .checkbox_div {
     margin-top: 1rem !important;
     font-size: 12px;
-    color: #484747;
+    color: var(--color-white);
     align-items: start;
 }
 .enquire-form input.checkbox {
@@ -96,7 +96,7 @@ span.thanku-txt {
     border: 1px solid var(--color-white) !important;
 }
 .enquire-form .submit_btn {
-    background-color: var(--color-footer) !important;
+    background-color: #565656 !important;
     color: var(--color-white);
     width: max-content;
     text-transform: capitalize;
@@ -104,8 +104,9 @@ span.thanku-txt {
     font-size: 16px;
     font-weight: 500;
     font-family: var(--font-medium);
-    border: 1px solid var(--color-footer) !important;
+    border: 1px solid var(--color-yellow) !important;
     margin-top: 1rem;
+    border-radius: 3px !important;
 }
 .enquire-form .submit_btn:hover {
     background-color: var(--color-yellow) !important;
@@ -150,7 +151,7 @@ span.thanku-txt {
     font-size: 20px;
     font-weight: 600;
     font-family: var(--font-semibold);
-    color: var(--color-footer);
+    color: var(--color-yellow);
     margin-bottom: 5px;
 }
 .price_range_group {
@@ -163,9 +164,9 @@ span.thanku-txt {
     line-height: 14px;
     font-weight: 500;
     font-family: var(--font-medium);
-    color: #686868;
+    color: var(--color-white);
     background-color: var(--color-transparent);
-    border: 0.5px solid #A3A1A1 !important;
+    border: 0.5px solid var(--color-white) !important;
     border-radius: 4px !important;
     width: 100%;
     flex: unset;
@@ -175,13 +176,13 @@ span.thanku-txt {
 .price_range_group .btn:active,
 .price_range_group .btn:hover {
     background-color: var(--color-yellow);
-    color: var(--color-white);
-    border-color: #A3A1A1 !important;
+    color: var(--color-black);
+    border-color: var(--color-yellow) !important;
 }
 .custom-checkbox .checkmark {
   width: 18px;
   height: 18px;
-  border: 1px solid #686868;
+  border: 1px solid var(--color-white);
   border-radius: 4px;
   background: var(--color-transparent);
   position: relative;
@@ -192,7 +193,7 @@ span.thanku-txt {
 }
 
 .custom-checkbox input:checked + .checkmark {
-  border-color: #686868;
+  border-color: var(--color-white);
 }
 
 /* Check icon */
@@ -211,7 +212,7 @@ span.thanku-txt {
 
 .custom-checkbox input:checked + .checkmark::after {
   display: block;
-  border-color: var(--color-black);
+  border-color: var(--color-white);
 }
 @media (max-width: 1399px) {
     .custom-checkbox .checkmark {

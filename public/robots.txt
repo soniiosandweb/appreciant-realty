@@ -2,4 +2,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://anantaaspire.co/sitemap.xml
+Sitemap: https://appreciantrealty.com/sitemap.xml

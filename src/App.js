@@ -5,12 +5,12 @@ import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions/TermsConditions';
 import PageNotFound from './components/Layout/PageNotFound';
 // import CookieConsent from "react-cookie-consent";
-import FloorPlanPage from './components/FloorPlan/floorPlan';
-import ConnectivityPage from './components/Connectivity/connectivity';
-import GalleryPage from './components/Gallery/gallery';
+// import FloorPlanPage from './components/FloorPlan/floorPlan';
+// import ConnectivityPage from './components/Connectivity/connectivity';
+// import GalleryPage from './components/Gallery/gallery';
 import ContactUsPage from './components/ContactUs/ContactUs';
-import AmenityPage from './components/Amenities/Amenities';
-import PriceListPage from './components/PriceList/priceList';
+// import AmenityPage from './components/Amenities/Amenities';
+// import PriceListPage from './components/PriceList/priceList';
 
 function App() {
 
@@ -28,7 +28,7 @@ function App() {
         contentStyle={{textAlign: "center", flex: 1}}
         overlayStyle={{backgroundColor: "#00000099"}}
       >
-       <p className='font-semibold text-xl mb-2'>Important</p>  'The Ananta Aspire' serves solely as a platform for online advertising services and does not facilitate sales between developers and website users. The information displayed does not guarantee that a developer or project is registered or compliant with the Real Estate (Regulation and Development) Act, 2016. Please exercise caution and independently verify all project information before making any purchase or decision.
+       <p className='font-semibold text-xl mb-2'>Important</p>  'The Appreciant Realty' serves solely as a platform for online advertising services and does not facilitate sales between developers and website users. The information displayed does not guarantee that a developer or project is registered or compliant with the Real Estate (Regulation and Development) Act, 2016. Please exercise caution and independently verify all project information before making any purchase or decision.
       </CookieConsent> */}
 
       <BrowserRouter >
@@ -47,12 +47,12 @@ function App() {
             <Route path='/gallery' element={<Home />} />
             <Route path='/contact' element={<Home />} />
           
-            <Route path='/floor-plan' element={<FloorPlanPage />} />
+            {/* <Route path='/floor-plan' element={<FloorPlanPage />} />
             <Route path='/price-list' element={<PriceListPage />} />
             <Route path='/connectivities' element={<ConnectivityPage />} />
-            <Route path='/galleries' element={<GalleryPage />} />
+            <Route path='/galleries' element={<GalleryPage />} /> */}
             <Route path='/contactus' element={<ContactUsPage />} />
-            <Route path='/amenity' element={<AmenityPage/>}/>
+            {/* <Route path='/amenity' element={<AmenityPage/>}/> */}
 
           </Route>
         </Routes>

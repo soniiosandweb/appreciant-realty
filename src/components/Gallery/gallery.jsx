@@ -9,8 +9,8 @@ const GalleryPage = () => {
     return(
         <>
             <MetaData 
-                title={"Discover Our Spaces - Ananta Aspire Gallery"}
-                description={"Discover the exclusive spaces at Ananta Aspire through our photo gallery. View images of our contemporary designs, green landscapes, and luxurious amenities."}
+                title={"Discover Our Spaces - Appreciant Realty Gallery"}
+                description={"Discover the exclusive spaces at Appreciant Realty through our photo gallery. View images of our contemporary designs, green landscapes, and luxurious amenities."}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <Gallery />

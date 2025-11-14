@@ -9,8 +9,8 @@ const AmenityPage = () => {
     return(
         <>
             <MetaData 
-                title={"Comprehensive Amenities at Ananta Aspire"}
-                description={" Discover comprehensive amenities at Ananta Aspire. Our project offers everything you need for a comfortable and fulfilling lifestyle, including sports, leisure, and relaxation options.  "}
+                title={"Comprehensive Amenities at Appreciant Realty"}
+                description={" Discover comprehensive amenities at Appreciant Realty. Our project offers everything you need for a comfortable and fulfilling lifestyle, including sports, leisure, and relaxation options.  "}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <Amenity />

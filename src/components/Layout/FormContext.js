@@ -5,7 +5,7 @@ const FormContext = createContext();
 export const FormProvider = ({ children }) => {
   const [isRequestFormOpen, setIsRequestFormOpen] = useState(false);
   const [isPriceFormOpen, setIsPriceFormOpen] = useState(false);
-  const [formTitle, setFormTitle] = useState("Ananta Aspire Exclusive Price List!");
+  const [formTitle, setFormTitle] = useState("Appreciant Realty Exclusive Price List!");
   const [subTitle, setSubTitle] = useState("Complete Overview of Current Prices for All Units to Guide Your Property Investment");
   const [buttonText, setButtonText] = useState("Download Price List");
   const [formId, setFormId] = useState("sideFixed");
@@ -19,7 +19,7 @@ export const FormProvider = ({ children }) => {
 
   const closeRequestForm = () => setIsRequestFormOpen(false);
 
-  const openPriceForm = (title = "Ananta Aspire Exclusive Price List!", subTitle= "Complete Overview of Current Prices for All Units to Guide Your Property Investment", buttonText= "Download Price List", formId = "sideFixed", fromAuto = false) => {
+  const openPriceForm = (title = "Appreciant Realty Exclusive Price List!", subTitle= "Complete Overview of Current Prices for All Units to Guide Your Property Investment", buttonText= "Download Price List", formId = "sideFixed", fromAuto = false) => {
     setFormTitle(title);
     setSubTitle(subTitle);
     setButtonText(buttonText);

@@ -10,8 +10,8 @@ const FloorPlanPage = () => {
         <>
 
             <MetaData 
-                title={"Tailored Floor Plans for Premium Living - Ananta Aspire"}
-                description={"Discover tailored floor plans at Ananta Aspire, offering the perfect blend of aesthetics and functionality. Find the layout that best fits your vision of a dream home."}
+                title={"Tailored Floor Plans for Premium Living - Appreciant Realty"}
+                description={"Discover tailored floor plans at Appreciant Realty, offering the perfect blend of aesthetics and functionality. Find the layout that best fits your vision of a dream home."}
                 canonicalUrl={`${process.env.REACT_APP_API_URL}${location.pathname}`}
             />
             <FloorPlan />
