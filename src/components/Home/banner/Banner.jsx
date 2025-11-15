@@ -94,7 +94,7 @@ const Banner = () => {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const settings = {
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
         dots: true,
         infinite: true,
