@@ -23,33 +23,35 @@
 }
 .why_choose_grid_lists {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 280px);
     gap: 30px;
+    justify-content: center;
 }
 .why_choose_grid_lists .why_choose_list_item {
-    padding: 30px 30px 60px;
+    padding: 30px 25px;
     background-color: var(--color-black);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     align-items: start;
     cursor: pointer;
+    min-height: 280px;
 }
 .why_choose_grid_lists .why_choose_list_item:hover {
     background-color: var(--color-yellow);
     color: var(--color-black);
 }
 .why_choose_list_item .why_choose_icon {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 .why_choose_grid_lists .why_choose_list_item:hover .why_choose_icon {
     filter: invert(1);
 }
 .why_choose_list_item .why_choose_list_title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     font-family: var(--font-medium);
     text-transform: uppercase;
@@ -63,16 +65,14 @@
     .why_choose_grid_lists {
         gap: 15px;
     }
-    .why_choose_list_item .why_choose_list_title {
-        font-size: 20px;
-    }
+    
     .why_choose_list_item .why_choose_list_text {
         font-size: 14px;
     }
 }
 @media (max-width: 991px) {
     .why_choose_grid_lists {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 280px);
     }
 }
 @media (max-width: 767px) {
@@ -90,10 +90,16 @@
 }
 @media (max-width: 500px) {
     .why_choose_grid_lists {
-        grid-template-columns: repeat(1, 280px);
+        grid-template-columns: repeat(1, 250px);
         justify-content: center;
+    }
+    .why_choose_grid_lists .why_choose_list_item {
+        min-height: 250px;
     }
     .why_choose_heading {
         font-size: 50px;
+    }
+    .why_choose_list_item .why_choose_list_title {
+        font-size: 18px;
     }
 }

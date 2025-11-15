@@ -13,7 +13,7 @@
 .prime_locations_grids {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 6rem;
+    gap: 4rem;
 }
 .prime_locations_grids_item {
     display: flex;

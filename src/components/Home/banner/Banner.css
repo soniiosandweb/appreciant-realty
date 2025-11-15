@@ -5,7 +5,7 @@
 .banner_slider_item {
     position: relative;
     height: 100vh;
-    min-height: 900px;
+    min-height: 700px;
 }
 .banner_slider_item .banner_bg_image {
     position: absolute;
@@ -30,7 +30,7 @@
     position: relative;
     height: 100%;
     z-index: 1;
-    padding: 6rem 20px 0px;
+    padding: 6rem 20px 6rem;
 }
 .banner_slider_item .row {
     position: relative;
@@ -74,7 +74,7 @@
     text-align: center;
 }
 .banner_slider_text_block {
-    max-width: 85%;
+    max-width: 850px;
     margin: auto;
     flex: 1;
 }
@@ -83,7 +83,7 @@
     padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
     max-width: 560px;
 }
@@ -113,7 +113,7 @@
 }
 .banner_slider_icons_lists {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -209,7 +209,7 @@
         max-width: 90%;
     }
     .banner_slider_item .banner_sliders_flex {
-        width: 90%;
+        width: 100%;
     }
     .banner_slider_item .banner_small_image {
         flex: 0 0 350px;
@@ -218,13 +218,10 @@
         margin-top: 0px;
     }
     .banner_slider_item {
-        min-height: 800px;
+        min-height: 700px;
     }
 }
 @media (max-width: 767px) {
-    .banner_slider_item {
-        min-height: 750px;
-    }
     .banner_slider_text_block {
         gap:8px;
     }
@@ -246,6 +243,7 @@
     .banner_slider_text_bg {
         min-height: auto;
         gap: 1rem;
+        padding: 0;
     }
     .banner_slider_subtext {
         margin: 0;
@@ -257,18 +255,26 @@
         width: 16px;
         height: 16px;
         object-fit: contain;
+        margin-top: 5px;
     }
     .banner_slider_icons_lists {
         justify-content: start;
     }
+    .banner_slider_item {
+        min-height: 100vh;
+        height: auto;
+    }
+    .banner_slider_item .banner_sliders_flex {
+        width: 100%;
+    }
 }
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
     .banner_slider_item .container, 
     .banner_slider_item .container-fluid {
         padding: 0 15px;
     }
     
-}
+} */
 @media (max-width: 480px) {
     .banner_slider_heading {
         font-size: 26px;
@@ -293,17 +299,23 @@
         gap: 5px;
         flex-direction: column;
     }
-    .banner_slider_item {
-        padding: 5rem 0 3rem;
-    }
+    
 }
 
 /* New CSS */
 .banner_context_form_flex {
     display: flex !important;
     height: 100%;
-    width: 75%;
+    width: 55%;
     margin-right: auto;
+}
+.banner_right_image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
 }
 .right_fixed_sidebar {
     margin-top: 86px;
@@ -556,7 +568,7 @@
         font-size: 16px;
     }
     .banner_context_form_flex {
-        width: 73%;
+        width: 50%;
     }
     .right_fixed_sidebar .enquire-form h5 {
         font-size: 1.3vw;
@@ -631,7 +643,7 @@
         font-size: 14px;
     }
     .banner_context_form_flex {
-        width: 100%;
+        width: 50%;
     }
     .right_fixed_sidebar .price_range_group .btn {
         font-size: 12px;
@@ -640,6 +652,21 @@
     .right_fixed_sidebar .enquire-form .checkbox_div, 
     .right_fixed_sidebar .we_get_div_grid .we_get_div_item .we_get_text {
         font-size: 11px;
+    }
+}
+@media (max-width: 767px) {
+    .banner_context_form_flex {
+        width: 100%;
+    }
+    .banner_right_image {
+        position: relative;
+        width: 80%;
+        right: 0;
+        left: auto;
+        margin-left: auto;
+    }
+    .banner_slider_item .container-fluid {
+        padding: 2rem 20px;
     }
 }
 @media (max-width: 575px) {
@@ -658,6 +685,13 @@
     }
     .right_fixed_sidebar .bottom_fixed_sidebar {
         padding: 20px 10px;
+    }
+    .banner_right_image {
+        position: relative;
+        width: 90%;
+        right: 0;
+        left: auto;
+        margin-left: auto;
     }
     
 }
