@@ -22,6 +22,31 @@ import exotic3 from "../../../assests/images/prime_locations/exotic-3.png";
 import exotic4 from "../../../assests/images/prime_locations/exotic-4.png";
 import exotic5 from "../../../assests/images/prime_locations/exotic-5.jpg";
 import exotic6 from "../../../assests/images/prime_locations/exotic-6.jpg";
+import exotic7 from "../../../assests/images/prime_locations/exotic-7.png";
+
+import affinity1 from "../../../assests/images/prime_locations/affinity-1.jpg";
+import affinity2 from "../../../assests/images/prime_locations/affinity-2.jpg";
+import affinity3 from "../../../assests/images/prime_locations/affinity-3.jpg";
+import affinity4 from "../../../assests/images/prime_locations/affinity-4.jpg";
+import affinity5 from "../../../assests/images/prime_locations/affinity-5.jpg";
+import affinity6 from "../../../assests/images/prime_locations/affinity-6.jpg";
+import affinity7 from "../../../assests/images/prime_locations/affinity-7.jpg";
+
+import atlantis1 from "../../../assests/images/prime_locations/atlantis-1.jpg";
+import atlantis2 from "../../../assests/images/prime_locations/atlantis-2.jpg";
+import atlantis3 from "../../../assests/images/prime_locations/atlantis-3.jpg";
+import atlantis4 from "../../../assests/images/prime_locations/atlantis-4.jpg";
+import atlantis5 from "../../../assests/images/prime_locations/atlantis-5.jpg";
+import atlantis6 from "../../../assests/images/prime_locations/atlantis-6.png";
+import atlantis7 from "../../../assests/images/prime_locations/atlantis-7.jpg";
+
+import hermitage1 from "../../../assests/images/prime_locations/hermitage-1.jpg";
+import hermitage2 from "../../../assests/images/prime_locations/hermitage-2.png";
+import hermitage3 from "../../../assests/images/prime_locations/hermitage-3.png";
+import hermitage4 from "../../../assests/images/prime_locations/hermitage-4.png";
+import hermitage5 from "../../../assests/images/prime_locations/hermitage-5.jpg";
+import hermitage6 from "../../../assests/images/prime_locations/hermitage-6.png";
+import hermitage7 from "../../../assests/images/prime_locations/hermitage-7.jpg";
 
 import { ImageList, ImageListItem } from "@mui/material";
 import Lightbox from 'yet-another-react-lightbox';
@@ -36,6 +61,8 @@ const PrimeLocation = () => {
 
     const { openPriceForm } = useFormContext();
 
+    const [visibleCount, setVisibleCount] = useState(5);
+
     const [lightboxProject, setLightboxProject] = useState(null);
     const [lightboxImage, setLightboxImage] = useState(null);
 
@@ -48,10 +75,15 @@ const PrimeLocation = () => {
         };
     }
 
+    const handleLoadMore = () => {
+        setVisibleCount(prev => prev + 5);
+    };
+
     const projectsLists = [
         {
             title: "Ananta Aspire",
             subtext: "Ananta Aspire is an upcoming luxury residential project located on the Zirakpur-Patiala Highway, offering a blend of modern living, advanced technology, and sustainable design.",
+            popup: "Discover Elevated Living at Ananta Aspire",
             overview: [
                 "Location: Zirakpur-Patiala Highway, Zirakpur, Chandigarh",
                 "Spread: 34,050 square yards",
@@ -92,8 +124,51 @@ const PrimeLocation = () => {
             ]
         },
         {
+            title: "Affinity Greens",
+            subtext: "Affinity Greens is a premium residential project by Affinity Builders, located on PR-7 Airport Road, Zirakpur. Designed to offer a harmonious blend of comfort, elegance, and green living, the project boasts spacious apartments, and modern amenities.",
+            popup: "Welcome to Affinity Greens - Luxury. Lifestyle. Location",
+            overview: [
+                "RERA NUMBER: PBRERA-SAS79-PR0377",
+                "Configuration: 2 BHK, 3 BHK, 3 BHK + Servant, 4 BHK, and 5 BHK apartments and penthouses",
+                "Possession: Phase 1 Rady for possession Phase 2 under construction",
+            ],
+            images: [
+                {
+                    src: affinity1,
+                    title: "Affinity Greens",
+                    rows: 2,
+                    cols: 2,
+                },
+                {
+                    src: affinity2,
+                    title: "Affinity Greens",
+                },
+                {
+                    src: affinity3,
+                    title: "Affinity Greens",
+                },
+                {
+                    src: affinity4,
+                    title: "Affinity Greens",
+                },
+                {
+                    src: affinity5,
+                    title: "Affinity Greens",
+                },
+                {
+                    src: affinity6,
+                    title: "Affinity Greens",
+                },
+                {
+                    src: affinity7,
+                    title: "Affinity Greens",
+                }
+            ]
+        },
+        {
             title: "Green Lotus Utsav",
             subtext: "Green Lotus Utsav by Maya Builders is a premium residential project located on PR-7 Airport Road, Zirakpur. Designed for sustainable luxury, the project offers spacious 3 to 6 BHK eco-friendly apartments and duplexes.",
+            popup: "Green Lotus Utsav - Luxury That Respects Nature",
             overview: [
                 "RERA NUMBER: PBRERA-SAS79-PR0425",
                 "3, 4, 5 & 6 BHK Apartments & Duplexes",
@@ -133,8 +208,51 @@ const PrimeLocation = () => {
             ]
         },
         {
+            title: "Atlantis Grand",
+            subtext: "Atlantic Grand by Krishna Buildtech is an exclusive residential development located on Highland Marg, Zirakpur. This upscale project offers spacious 3 BHK apartments ranging from 1915 to 2066 sq. ft., designed for those seeking a blend of elegance and comfort.",
+            popup: "Step Into Iconic Living at Atlantis Grand",
+            overview: [
+                "RERA NUMBER: PBRERA-SAS79-PR0976",
+                "Possession: Expected from December 2028",
+                "3 BHK apartments",
+            ],
+            images: [
+                {
+                    src: atlantis1,
+                    title: "Atlantis Grand",
+                    rows: 2,
+                    cols: 2,
+                },
+                {
+                    src: atlantis2,
+                    title: "Atlantis Grand",
+                },
+                {
+                    src: atlantis3,
+                    title: "Atlantis Grand",
+                },
+                {
+                    src: atlantis4,
+                    title: "Atlantis Grand",
+                },
+                {
+                    src: atlantis5,
+                    title: "Atlantis Grand",
+                },
+                {
+                    src: atlantis6,
+                    title: "Atlantis Grand",
+                },
+                {
+                    src: atlantis7,
+                    title: "Atlantis Grand",
+                }
+            ]
+        },
+        {
             title: "Exotic Grandeur",
             subtext: "Exotic Grandeur by Exotic Realtors and Developers is an upscale residential development situated on the Zirakpur-Panchkula-Kalka Highway (NH-22), near Sun Park Resort, Zirakpur.",
+            popup: "Exotic Grandeur - Where Luxury Meets Grandeur",
             overview: [
                 "RERA Registration: PBRERA-SAS79-PR00059",
                 "4 BHK Apartments",
@@ -168,8 +286,50 @@ const PrimeLocation = () => {
                     title: "Exotic Grandeur",
                 },
                 {
-                    src: exotic4,
+                    src: exotic7,
                     title: "Exotic Grandeur",
+                }
+            ]
+        },
+        {
+            title: "Harmitage Centralis",
+            subtext: "Hermitage Centralis by Hermitage Infra Developers is a premium residential project located on VIP Road, Zirakpur, offering a blend of modern architecture and serene living.",
+            popup: "Hermitage Centralis - Smart Living in the Heart of Zirakpur",
+            overview: [
+                "RERA Registration: PBRERA-SAS79-PR0408",
+                "Unit Types: 3 BHK, 4 BHK Apartments",
+                "Possession: Ready to move in",
+            ],
+            images: [
+                {
+                    src: hermitage1,
+                    title: "Harmitage Centralis",
+                    rows: 2,
+                    cols: 2,
+                },
+                {
+                    src: hermitage2,
+                    title: "Harmitage Centralis",
+                },
+                {
+                    src: hermitage3,
+                    title: "Harmitage Centralis",
+                },
+                {
+                    src: hermitage4,
+                    title: "Harmitage Centralis",
+                },
+                {
+                    src: hermitage5,
+                    title: "Harmitage Centralis",
+                },
+                {
+                    src: hermitage6,
+                    title: "Harmitage Centralis",
+                },
+                {
+                    src: hermitage7,
+                    title: "Harmitage Centralis",
                 }
             ]
         }
@@ -191,7 +351,7 @@ const PrimeLocation = () => {
                     <Row>
                         <Col>
                             <div className="prime_locations_grids">
-                                {projectsLists.map((item,i) => (
+                                {projectsLists.slice(0, visibleCount).map((item,i) => (
                                     <div className="prime_locations_grids_item" key={i}>
                                         <div className="flex_heading_block">
                                             <h2 className="main_heading">{item.title}</h2>
@@ -206,7 +366,7 @@ const PrimeLocation = () => {
                                                         <li key={index} className="project_overview_lists_item paragraph">{list}</li>
                                                     ))}
                                                 </ul>
-                                                <Button className="prime_location_btn" onClick={() => openPriceForm("Enquire Now to Know More", "Connect with Our Team for Brochure, Prices & Site Visit Details", "Explore Now", "explore")}>
+                                                <Button className="prime_location_btn" onClick={() => openPriceForm(`${item.popup ? item.popup : "Enquire Now to Know More"}`, "Connect with Our Team for Brochure, Prices & Site Visit Details", "Submit", "explore")}>
                                                     Explore Now
                                                 </Button>
                                             </div>
@@ -220,7 +380,7 @@ const PrimeLocation = () => {
                                                     className='gallery_prime_location'
                                                 >
                                                     {item.images.map((img,index) => (
-                                                        <ImageListItem key={index} cols={img.cols || 1} rows={img.rows || 1} className={`prime_gallery_${i} prime_location_gallery_item`}>
+                                                        <ImageListItem key={index} cols={img.cols || 1} rows={img.rows || 1} className={`prime_gallery_${index} prime_location_gallery_item`}>
                                                             <img
                                                                 {...srcset(img.src, 121, img.rows, img.cols)}
                                                                 alt={img.title}
@@ -239,6 +399,12 @@ const PrimeLocation = () => {
                                         </div>
                                     </div>
                                 ))}
+
+                                {visibleCount < projectsLists.length && (
+                                    <Button className="prime_location_btn load_more" onClick={handleLoadMore}>
+                                        Load More
+                                    </Button>
+                                )}
                             </div>
                         </Col>
                     </Row>

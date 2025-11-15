@@ -5,12 +5,10 @@ import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions/TermsConditions';
 import PageNotFound from './components/Layout/PageNotFound';
 // import CookieConsent from "react-cookie-consent";
-// import FloorPlanPage from './components/FloorPlan/floorPlan';
-// import ConnectivityPage from './components/Connectivity/connectivity';
-// import GalleryPage from './components/Gallery/gallery';
 import ContactUsPage from './components/ContactUs/ContactUs';
 import WhyChoosePage from './components/WhyChoosePage/WhyChoosePage';
 import LocationPage from './components/LocationPage/LocationPage';
+import ApartmentsPage from './components/ApartmentsPage/ApartmentsPage';
 // import AmenityPage from './components/Amenities/Amenities';
 // import PriceListPage from './components/PriceList/priceList';
 
@@ -43,12 +41,12 @@ function App() {
 
             <Route path='/aboutus' element={<Home />} />
             <Route path='/location' element={<Home />} />
-            <Route path='/properties' element={<Home />} />
+            <Route path='/apartment' element={<Home />} />
             <Route path='/whyus' element={<Home />} />
             <Route path='/contact' element={<Home />} />
           
-            {/* <Route path='/floor-plan' element={<FloorPlanPage />} />
-            <Route path='/price-list' element={<PriceListPage />} />*/}
+            {/* <Route path='/floor-plan' element={<FloorPlanPage />} />*/}
+            <Route path='/apartments' element={<ApartmentsPage />} />
             <Route path='/locations' element={<LocationPage />} />
             <Route path='/whychoose' element={<WhyChoosePage />} /> 
             <Route path='/contactus' element={<ContactUsPage />} />

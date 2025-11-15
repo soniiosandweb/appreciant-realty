@@ -27,8 +27,8 @@ const Footer = () => {
         },
         {
           name: "Properties",
-          redirect: "/properties",
-          id: "properties",
+          redirect: "/apartments",
+          id: "apartment",
         },
         {
           name: "Why Us",

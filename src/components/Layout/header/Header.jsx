@@ -40,9 +40,9 @@ const Header = () => {
     },
     {
       title: "Properties",
-      link: "#properties",
-      id: "properties",
-      redirect: "/properties",
+      link: "#apartment",
+      id: "apartment",
+      redirect: "/apartment",
     },
     {
       title: "Why US",

@@ -1,3 +1,6 @@
+.elite_developers_section {
+    padding-top: 2rem;
+}
 .heading_block_main .flex_heading_block .main_heading {
     color: var(--color-white);
 }
@@ -16,6 +19,19 @@
     width: 100%;
     object-fit: none;
     max-height: 98px;
+    cursor: pointer;
+}
+.logo_slider_img.colored {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+.logo_slider_item:hover .logo_slider_img {
+    display: none;
+}
+.logo_slider_item:hover .logo_slider_img.colored {
+    display: block;
+    opacity: 1;
 }
 .logos_sliders_block {
     padding: 0 20px;

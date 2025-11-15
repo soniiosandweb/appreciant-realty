@@ -1,5 +1,6 @@
 import MetaData from "../Layout/MetaData"
 import AboutUs from "./AboutUs/AboutUs"
+import Apartments from "./Apartments/Apartments"
 import Banner from "./banner/Banner"
 import ContactUs from "./ContactUs/ContactUs"
 import EliteDevelopers from "./EliteDevelopers/EliteDevelopers"
@@ -25,6 +26,7 @@ const Home = () => {
             <AboutUs />
             <PrimeLocation />
             <EliteDevelopers />
+            <Apartments />
             <WhyChoose />
             <ContactUs />
         </>

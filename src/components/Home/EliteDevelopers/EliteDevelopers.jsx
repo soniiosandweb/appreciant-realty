@@ -8,21 +8,30 @@ import valleyGarden from "../../../assests/images/logos/vallery-gardens.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import homelandColored from "../../../assests/images/logos/homeland-colored.png";
+import anataColored from "../../../assests/images/logos/anata-aspire-colored.png";
+import gillcoHeightsColored from "../../../assests/images/logos/gillco-colored.png";
+import valleyGardenColored from "../../../assests/images/logos/vallery-gardens-colored.png";
+
 const logosSlider = [
     {
         img: homeland,
+        colored: homelandColored,
         title: "Homeland Heights",
     },
     {
         img: anataAspire,
+        colored: anataColored,
         title: "The Ananta Aspire",
     },
     {
         img: gillcoHeights,
+        colored: gillcoHeightsColored,
         title: "Gillco Heights",
     },
     {
         img: valleyGarden,
+        colored: valleyGardenColored,
         title: "The Valley Garden",
     }
 ]
@@ -77,7 +86,7 @@ const EliteDevelopers = () => {
     };
 
     return(
-        <div className="elite_developers_section padding-top padding-bottom" id="properties">
+        <div className="elite_developers_section padding-bottom" id="properties">
             <Container>
                 <Row>
                     <Col>
@@ -94,6 +103,7 @@ const EliteDevelopers = () => {
                                 {logosSlider.map((item,i) => (
                                     <div className="logo_slider_item" key={i}>
                                         <img src={item.img} alt={item.title} className="logo_slider_img" />
+                                        <img src={item.colored} alt={item.title} className="logo_slider_img colored" />
                                     </div>
                                 ))}
                             </Slider>
