@@ -15,8 +15,8 @@ const Home = () => {
     return(
         <>
             <MetaData 
-                title={"Appreciant Realty | Buy 3BHK & 4BHK Luxury Apartments in Zirakpur"} 
-                description={"Discover premium flats for sale in Zirakpur at AnantaAspire. Explore luxury flats in Zirakpur with modern amenities. Visit AnantaAspire today!"} 
+                title={"Buy 3 BHK & 4 BHK Luxury Flats in Zirakpur - Appreciant Realty"} 
+                description={"Explore 3 BHK & 4 BHK Luxury Flats in Zirakpur. Find premium luxury flats in Zirakpur and top flats for sale in Zirakpur at AppreciantRealty.com today now!!"} 
                 keywords={"The Appreciant Realty, 3 BHK Flats in Zirakpur,4 BHK Flats in Zirakpur, Luxury Apartments in Zirakpur,Zirakpur Real Estate, Flats for Sale in Zirakpur, Appreciant Realty, Modern Apartments Zirakpur"}
                 canonicalUrl={process.env.REACT_APP_API_URL}
                 localSchema={localSchema}
