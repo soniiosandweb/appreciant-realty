@@ -40,7 +40,7 @@ span.thanku-txt {
 }
 .PhoneInputCountrySelectArrow {
     opacity: 1 !important;
-    --PhoneInputCountrySelectArrow-color: var(--color-black) !important;
+    --PhoneInputCountrySelectArrow-color: var(--color-white) !important;
 }
 .PhoneInputCountryIcon {
     margin-right: 5px;

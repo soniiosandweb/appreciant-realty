@@ -8,6 +8,7 @@ import { faCircleArrowLeft, faCircleArrowRight } from "@fortawesome/free-solid-s
 import Slider from "react-slick";
 import location from "../../../assests/images/apartments/location.png";
 import { useFormContext } from "../../Layout/FormContext";
+import { useEffect, useState } from "react";
 
 const apartmentsLists = [
     {
@@ -42,9 +43,16 @@ const PrevArrow = ({ onClick }) => (
 const Apartments = () => {
 
     const { openPriceForm } = useFormContext();
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const settingsAprt = {
-        autoplay: false,
+        autoplay: isMobile,
         autoplaySpeed: 5000,
         dots: false,
         infinite: true,
@@ -67,16 +75,21 @@ const Apartments = () => {
                 breakpoint: 767,
                 settings: {
                     slidesToShow: 2,
+                    arrows: false,
+                    autoplay: true,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
+                    arrows: false,
+                    autoplay: true,
                 }
             }
         ]
     };
+    
 
     return(
         <div className="apartments_section padding-bottom" id="apartment">
