@@ -293,7 +293,7 @@ const PrimeLocation = () => {
             ]
         },
         {
-            title: "Harmitage Centralis",
+            title: "Hermitage Centralis",
             subtext: "Hermitage Centralis by Hermitage Infra Developers is a premium residential project located on VIP Road, Zirakpur, offering a blend of modern architecture and serene living.",
             popup: "Hermitage Centralis - Smart Living in the Heart of Zirakpur",
             overview: [
@@ -304,33 +304,33 @@ const PrimeLocation = () => {
             images: [
                 {
                     src: hermitage1,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                     rows: 2,
                     cols: 2,
                 },
                 {
                     src: hermitage2,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 },
                 {
                     src: hermitage3,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 },
                 {
                     src: hermitage4,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 },
                 {
                     src: hermitage5,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 },
                 {
                     src: hermitage6,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 },
                 {
                     src: hermitage7,
-                    title: "Harmitage Centralis",
+                    title: "Hermitage Centralis",
                 }
             ]
         }

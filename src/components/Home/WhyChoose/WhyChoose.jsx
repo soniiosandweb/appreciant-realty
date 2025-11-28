@@ -16,12 +16,12 @@ const whyChooseList = [
     {
         icon: priceTag,
         title: "Personalized Exclusive",
-        text: "Avail From Our Personalized Offer to make Home Buying Experience Pleasent",
+        text: "Avail From Our Personalized Offer to make Home Buying Experience Pleasant",
     },
     {
         icon: brokerage,
         title: "Zero Brokerage",
-        text: "Avail From Our Personalized Offer to make Home Buying Experience Pleasent",
+        text: "Avail From Our Personalized Offer to make Home Buying Experience Pleasant",
     },
     {
         icon: contract,
@@ -30,7 +30,7 @@ const whyChooseList = [
     },
     {
         icon: loanIcon,
-        title: "Home Loan Assistence",
+        title: "Home Loan Assistance",
         text: "Take Our Home Loan Consultation to Find the best Financing Opportunity",
     }
 ]
